@@ -174,7 +174,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return res.status(400).json({ success: false, error: "Please select a valid monthly investment option." });
   }
 
-  const allowedTimings = ["Immediately, as soon as we align", "Within 2 weeks", "This month"];
+  const allowedTimings = ["Immediately, as soon as we align", "Within a Week"];
   if (!vrijeme || typeof vrijeme !== "string" || !allowedTimings.includes(vrijeme.trim())) {
     return res.status(400).json({ success: false, error: "Please select a valid start timeframe option." });
   }

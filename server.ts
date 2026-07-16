@@ -222,8 +222,7 @@ async function startServer() {
     // Validate timing choice
     const allowedTimings = [
       "Immediately, as soon as we align",
-      "Within 2 weeks",
-      "This month",
+      "Within a Week",
     ];
     if (!vrijeme || typeof vrijeme !== "string" || !allowedTimings.includes(vrijeme.trim())) {
       return res.status(400).json({

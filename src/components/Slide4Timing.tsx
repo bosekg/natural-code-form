@@ -7,8 +7,7 @@ interface Slide4TimingProps {
 
 const TIMING_OPTIONS = [
   { value: "Immediately, as soon as we align", tag: "Immediately", description: "I am ready to put in the effort and start right away without delay." },
-  { value: "Within 2 weeks", tag: "Soon", description: "I have time to organize my remaining obligations and will start shortly." },
-  { value: "This month", tag: "This month", description: "I plan to start and enter the training process by the end of the current month." },
+  { value: "Within a Week", tag: "Soon", description: "I have time to organize my remaining obligations and will start shortly." },
 ];
 
 export default function Slide4Timing({
@@ -31,7 +30,7 @@ export default function Slide4Timing({
           If this were the right fit, when would you like to start working together? <span className="text-[#8c1f2f] font-bold">*</span>
         </span>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4" role="radiogroup" aria-label="Kada želiš krenuti">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4" role="radiogroup" aria-label="Kada želiš krenuti">
           {TIMING_OPTIONS.map((opt) => {
             const isSelected = data.vrijeme === opt.value;
             return (
