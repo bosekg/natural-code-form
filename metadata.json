@@ -1,0 +1,6 @@
+{
+  "name": "Lead Qualification Form",
+  "description": "A sleek, multi-step lead qualification form with smooth animations, stable hover effects, and automatic email notifications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
